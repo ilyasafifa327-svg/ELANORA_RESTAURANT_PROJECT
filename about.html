@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About ELÁNORA — Our story, philosophy, culinary heritage, ingredients and hospitality." />
+    <title>About — ELÁNORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar navbar--solid" id="navbar">
+      <div class="nav__inner">
+        <a href="/index.html" class="nav__logo">
+          <span class="nav__logo-main">ELÁNORA</span>
+          <span class="nav__logo-sub">Restaurant &amp; Fine Dining</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="/index.html" class="nav__link" data-page="home">Home</a></li>
+          <li><a href="/about.html" class="nav__link nav__link--active" data-page="about">About</a></li>
+          <li><a href="/menu.html" class="nav__link" data-page="menu">Menu</a></li>
+          <li><a href="/chefs.html" class="nav__link" data-page="chefs">Chefs</a></li>
+          <li><a href="/reservation.html" class="nav__link" data-page="reservation">Reservation</a></li>
+          <li><a href="/contact.html" class="nav__link" data-page="contact">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <button class="nav__icon-btn" id="themeToggle" aria-label="Toggle theme">
+            <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+          <button class="nav__icon-btn" id="favBtn" aria-label="Favorites">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="nav__badge" id="favBadge" style="display:none">0</span>
+          </button>
+          <button class="nav__icon-btn" id="cartBtn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="nav__badge" id="cartBadge" style="display:none">0</span>
+          </button>
+          <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/index.html" class="mobile-menu__link" data-page="home">Home</a>
+      <a href="/about.html" class="mobile-menu__link mobile-menu__link--active" data-page="about">About</a>
+      <a href="/menu.html" class="mobile-menu__link" data-page="menu">Menu</a>
+      <a href="/chefs.html" class="mobile-menu__link" data-page="chefs">Chefs</a>
+      <a href="/reservation.html" class="mobile-menu__link" data-page="reservation">Reservation</a>
+      <a href="/contact.html" class="mobile-menu__link" data-page="contact">Contact</a>
+    </div>
+
+    <!-- ===== PAGE HERO ===== -->
+    <header class="page-hero">
+      <div class="page-hero__bg">
+        <img src="https://images.pexels.com/photos/4253300/pexels-photo-4253300.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Chefs cooking in a professional restaurant kitchen" />
+      </div>
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content">
+        <p class="eyebrow" style="color:var(--gold-400)">Our Story</p>
+        <h1 class="page-hero__title">About ELÁNORA</h1>
+        <p class="page-hero__subtitle">A journey of flavor, heritage and hospitality</p>
+      </div>
+    </header>
+
+    <!-- ===== OUR STORY ===== -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-block reveal">
+          <div class="about-block__img">
+            <img src="https://images.pexels.com/photos/32568165/pexels-photo-32568165.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Elegant restaurant dining room with warm lighting" loading="lazy" />
+          </div>
+          <div class="about-block__text">
+            <p class="eyebrow">Our Story</p>
+            <h2>A Vision Born from Heritage</h2>
+            <hr class="gold-line gold-line--left" />
+            <p>ELÁNORA began as a dream — to create a space where the rich tapestry of Indian culinary tradition could meet the world's most refined flavors. Founded in the heart of Chennai, our restaurant is a celebration of heritage and innovation.</p>
+            <p>From the first moment you step through our doors, you are welcomed into a world of warmth and elegance. Every corner tells a story, every dish carries a legacy, and every visit becomes a cherished memory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR PHILOSOPHY ===== -->
+    <section class="about-section about-section--alt">
+      <div class="container">
+        <div class="about-block about-block--reverse reveal">
+          <div class="about-block__img">
+            <img src="https://images.pexels.com/photos/17057034/pexels-photo-17057034.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fine dining table setting with elegant glassware" loading="lazy" />
+          </div>
+          <div class="about-block__text">
+            <p class="eyebrow">Our Philosophy</p>
+            <h2>Crafting Memories, One Plate at a Time</h2>
+            <hr class="gold-line gold-line--left" />
+            <p>We believe that great food is an art form. It requires patience, skill, and an unwavering commitment to quality. Our chefs approach each dish as a canvas, blending colors, textures and flavors to create edible masterpieces.</p>
+            <p>Dining at ELÁNORA is not just about eating — it is about experiencing. It is about the conversation over a beautifully set table, the anticipation as each course arrives, and the satisfaction of a meal perfectly prepared.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR CULINARY HERITAGE ===== -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-block reveal">
+          <div class="about-block__img">
+            <img src="https://images.pexels.com/photos/6444313/pexels-photo-6444313.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Vibrant display of Indian spices at a market" loading="lazy" />
+          </div>
+          <div class="about-block__text">
+            <p class="eyebrow">Our Culinary Heritage</p>
+            <h2>Roots in Tradition, Eyes on the World</h2>
+            <hr class="gold-line gold-line--left" />
+            <p>Our menu is a bridge between worlds. We honor the centuries-old techniques of Indian cooking — the slow-simmered curries, the tandoor's intense heat, the delicate balance of spices — while embracing global culinary influences.</p>
+            <p>From the coastal flavors of the Mediterranean to the umami depth of East Asian cuisine, we weave international elements into our dishes with respect and creativity, always preserving the soul of each tradition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR INGREDIENTS ===== -->
+    <section class="about-section about-section--alt">
+      <div class="container">
+        <div class="about-block about-block--reverse reveal">
+          <div class="about-block__img">
+            <img src="https://images.pexels.com/photos/37083829/pexels-photo-37083829.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fresh seasonal vegetables in baskets" loading="lazy" />
+          </div>
+          <div class="about-block__text">
+            <p class="eyebrow">Our Ingredients</p>
+            <h2>Seasonal, Local, Exceptional</h2>
+            <hr class="gold-line gold-line--left" />
+            <p>Great food begins with great ingredients. We partner with local farmers and artisans who share our commitment to quality and sustainability. Our kitchen evolves with the seasons, ensuring that every dish is made with ingredients at their peak.</p>
+            <p>From hand-picked herbs to freshly ground spices, from line-caught seafood to heritage grains — we source with intention and prepare with care, because what goes into our food matters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR HOSPITALITY ===== -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-block reveal">
+          <div class="about-block__img">
+            <img src="https://images.pexels.com/photos/14295998/pexels-photo-14295998.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Warm glowing restaurant exterior at night" loading="lazy" />
+          </div>
+          <div class="about-block__text">
+            <p class="eyebrow">Our Hospitality</p>
+            <h2>Atithi Devo Bhava — The Guest is Divine</h2>
+            <hr class="gold-line gold-line--left" />
+            <p>In Indian culture, the guest is treated as god. This ancient philosophy is the heartbeat of ELÁNORA. From the moment you arrive, our team is dedicated to making you feel welcomed, valued and cared for.</p>
+            <p>Whether it is your first visit or your fiftieth, whether you come for a quiet solo meal or a grand celebration — you are family. This is not just service. This is hospitality from the heart.</p>
+            <a href="/reservation.html" class="btn btn--primary">Reserve a Table</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <h3>ELÁNORA</h3>
+            <p>Restaurant &amp; Fine Dining</p>
+            <p class="footer__brand-text">A taste worth remembering. Where Indian heritage meets international flavors, and every plate tells a story.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <a href="/index.html" class="footer__link">Home</a>
+            <a href="/about.html" class="footer__link">About</a>
+            <a href="/menu.html" class="footer__link">Menu</a>
+            <a href="/chefs.html" class="footer__link">Chefs</a>
+            <a href="/reservation.html" class="footer__link">Reservation</a>
+            <a href="/contact.html" class="footer__link">Contact</a>
+          </div>
+          <div class="footer__col footer__info">
+            <h4>Visit Us</h4>
+            <p>24 Heritage Avenue</p>
+            <p>Chennai, Tamil Nadu</p>
+            <p>+91 98765 43210</p>
+            <p>dining@elanora.com</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 ELÁNORA. Crafted with care.</p>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="bottom-nav">
+      <div class="bottom-nav__items">
+        <a href="/index.html" class="bottom-nav__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home</a>
+        <a href="/menu.html" class="bottom-nav__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Menu</a>
+        <button class="bottom-nav__item" id="bottomFavBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Favorites<span class="bottom-nav__badge" id="bottomFavBadge" style="display:none">0</span></button>
+        <button class="bottom-nav__item" id="bottomCartBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Cart<span class="bottom-nav__badge" id="bottomCartBadge" style="display:none">0</span></button>
+        <button class="bottom-nav__item" id="bottomMoreBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>More</button>
+      </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+    <aside class="drawer" id="cartDrawer">
+      <div class="drawer__header">
+        <h3 class="drawer__title">My Order</h3>
+        <button class="drawer__close" id="cartClose" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="drawer__body" id="cartBody"></div>
+      <div class="drawer__footer" id="cartFooter" style="display:none"></div>
+    </aside>
+    <aside class="drawer" id="favDrawer">
+      <div class="drawer__header">
+        <h3 class="drawer__title">My Favorites</h3>
+        <button class="drawer__close" id="favClose" aria-label="Close favorites"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="drawer__body" id="favBody"></div>
+    </aside>
+    <div class="modal" id="quickViewModal">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__content" id="quickViewContent"></div>
+    </div>
+    <div class="modal" id="checkoutModal">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__content checkout" id="checkoutContent"></div>
+    </div>
+    <div class="modal" id="confirmModal">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__content" id="confirmContent"></div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
